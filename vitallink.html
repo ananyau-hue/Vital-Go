@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HEALTH CARE</title>
+
+<style>
+body {
+    background-color:#2e4053;
+    font-family: "Times New Roman",serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding-top: 30px;
+    border: 5px solid black;
+    border-radius: 25px;    
+}
+
+h1 {
+    color:white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+img {
+    display:block;
+    margin:0 auto;
+    width:72%;
+    height:70%;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+button {
+    background-color:#2e4053;
+    margin-top: 0 auto;
+    color: white;
+    font-size: 18px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.registration-section {
+    display: none;
+    width: 450px;        
+    min-height: 450px;   
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.7);
+    background-size: cover;
+    background-position: center;
+    color:#2e4053;
+}
+
+h2 {
+    color: #2e4053;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+    color: #2e4053;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+</style>
+
+<script>
+function showLogin() {
+    document.getElementById("welcome").style.display = "none";
+    document.getElementById("registration").style.display = "block";
+}
+</script>
+</head>
+
+<body>
+
+   
+    <div id="welcome" class="container">
+        <h1>VITAL-GOO</h1>
+        <img src="https://www.news-medical.net/image-handler/picture/2021/4/shutterstock_1561815367.jpg" alt="Image">
+        <button onclick="showLogin()">GO TO REGISTRATION</button>
+    </div>
+
+    
+    <div id="registration" class="registration-section" style="background-image:url('https://www.news-medical.net/image-handler/picture/2021/4/shutterstock_1561815367.jpg');">
+        <h2>Vital-Go Registration</h2>
+
+      
+        <form action="dashboard.html" method="get">
+
+            <label>Contact / Email:</label>
+            <input type="text" name="contact" required><br>
+
+            <label>Username:</label>
+            <input type="text" name="username" required><br>
+
+            <label>Password:</label>
+            <input type="password"  name="password" required><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="Back">
+        </form>
+    </div>
+
+</body>
+</html>

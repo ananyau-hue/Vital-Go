@@ -1,0 +1,76 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Appointment Booking</title>
+<style>
+h2{
+    background-color:#2e4053;
+    color:white;
+    padding:15px;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+}
+p{
+font-family: "Times New Roman",serif;
+font-size: 18px;
+}
+form{
+    width: 450px;
+    background: white;
+    padding: 25px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #bfc9ca;
+}
+label{
+    font-size: 18px;
+    font-weight: bold;
+  
+}
+</style>
+</head>
+<body>
+<h2><u>Registration Form</u></h2>
+<form method="post" onsubmit="return confirmMsg()">
+<label>Name Of Doctor:</label>
+<select>
+<option>Dr. Aslam Khan Clinic</option>
+<option>DR SANIL SINHASAN</option>
+</select>
+<br><br>
+<label>First Name:</label><input type="text" name="first_name" required>
+<br><br>
+<label>Last Name:</label><input type="text" name="last_name" required>
+<br><br>
+<label>Blood Group:</label><input type="text" name="blood_group" required>
+<br><br>
+<label>e-mail:</label><input type="email" name="email" required>
+<br><br>
+<label>Password:</label><input type="password" name="pwd" required>
+<br><br>
+<label>Date of Birth:</label><input type="date" name=dob" required>
+<br><br>
+<label>Gender:</label><input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<br><br>
+<label>Mobile:</label><input type="tel" name="mobile" required>
+<br><br>
+<label>Address:</label><textarea name="address" required></textarea>
+<br><br>
+<label>Reports:</label><input type="file" required></textarea>
+<br><br>
+<input type="submit" value="Submit"><input type="reset" value="Reset">
+</form>
+<br>
+<br>
+<script>
+function confirmMsg(){
+    alert("Appointment Confirmed!");
+    return true;   // allows the form to submit
+}
+</script>
+<a href="Sanil.html">Back</a>
+</body>
+</html>
